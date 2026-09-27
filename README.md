@@ -14,7 +14,7 @@
 
 ## デプロイ
 
-Cloudflare Pages、Vercel、GitHub Pages へこのディレクトリを静的サイトとしてそのまま公開できます。ビルド不要です。
+Cloudflare Workers Static Assets、Vercel、GitHub Pages へ公開できます。Cloudflare Workersでは `npm install` 後に `npm run deploy` を実行すると、`https://game.chozo.net/megusuri/` に配信する設定です。
 
 ## ゲームパラメータ
 
