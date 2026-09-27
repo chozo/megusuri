@@ -1,4 +1,4 @@
-# 一滴入魂
+# 目薬ゲーム
 
 スマートフォン縦画面の目薬タイミングゲーム。液滴が約0.85秒後に届く未来のまばたきを読み、目の中央へ落とします。
 
@@ -18,19 +18,20 @@ Cloudflare Pages、Vercel、GitHub Pages へこのディレクトリを静的サ
 
 ## ゲームパラメータ
 
-`game.js` 冒頭の `CONFIG` に集約しています。`bottleSpeed`（開始時の横移動）、`bottleSpeedRamp`（終盤の加速倍率）、`dropDurationMs`（到達時間）、`eyeOpenMs`・各 blink 値（まばたき）、`pupilWidth` / `irisWidth` / `eyeWidth`（判定幅）、`playMs`（制限時間）を調整できます。
+`game.js` 冒頭の `CONFIG` に集約しています。`bottleSpeed`（開始時の横移動）、`bottleSpeedRamp`（終盤の加速倍率。現在は開始時の5倍）、`dropDurationMs`（到達時間）、`shotCooldownMs` / `maxDrops`（連続投下）、`eyeOpenMs`・各 blink 値（まばたき）、`pupilWidth` / `irisWidth` / `eyeWidth`（判定幅）、`playMs`（制限時間）を調整できます。
 
 ## 開発タスク
 
 - [x] Phase 1
   - [x] 縦画面・目薬左右移動・予測できるまばたき
-  - [x] 液滴・同時発射制限・PERFECT / MISS / CLOSE 判定
+  - [x] 液滴・連続投下・PERFECT / VERY GOOD / GOOD / MISS / CLOSE 判定
 - [x] Phase 2
   - [x] START・カウントダウン・30秒タイマー・結果・リトライ
 - [x] Phase 3（最小演出）
   - [x] 成功時の粒・MISS の落下・CLOSE の跳ね返り
 - [ ] 実機で難易度を微調整
-- [ ] 効果音・コンボ・ハイスコア保存
+- [x] BGM・効果音
+- [ ] コンボ・ハイスコア保存
 
 ## 今後のアイデア
 
