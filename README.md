@@ -36,3 +36,7 @@ Cloudflare Workers Static Assets、Vercel、GitHub Pages へ公開できます�
 ## 今後のアイデア
 
 難易度別まばたき、表情/目薬スキン、効果音・振動、ランキング。
+
+## ライセンス
+
+[MIT License](./LICENSE)（Copyright (c) 2026 chozo）です。改変・再配布・商用利用ができます。利用するときは、著作権表示とライセンス文を残してください。

@@ -2,6 +2,7 @@
   "name": "megusuri-game",
   "private": true,
   "version": "1.0.0",
+  "license": "MIT",
   "scripts": {
     "build": "node tools/build-dist.mjs",
     "deploy": "npm run build && wrangler deploy"
