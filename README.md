@@ -12,6 +12,12 @@
 
 音は外部ファイルを使わず、Web Audio APIで合成しています。「はじめる」を押すとBGMが始まり、投下・判定・結果に効果音が鳴ります。
 
+`public/` には公開ルートにそのまま置くファイル（`favicon.svg`・SNS共有用の `ogp.png`）を入れています。`npm run build` で `dist/megusuri/` の直下にコピーされます。
+
+## OGP画像
+
+`npm run ogp` で、SNS で共有したときに表示される画像 `public/ogp.png`（1200×630）を作り直せます（`npm install` で入る `playwright-core` と、インストール済みの Chrome を使います）。`tools/ogp/make-ogp.mjs` がゲームを開き、時計を止めて1コマずつ進めながら、目薬が黒目に入って「PERFECT! +10」が出た瞬間を撮ります。時計と乱数を固定しているので、毎回同じ絵になります。撮った画面にタイトル・遊び方・公開URLを重ねます。
+
 ## デプロイ
 
 Cloudflare Workers Static Assets、Vercel、GitHub Pages へ公開できます。Cloudflare Workersでは `npm install` 後に `npm run deploy` を実行すると、`https://game.chozo.net/megusuri/` に配信する設定です。
