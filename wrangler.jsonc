@@ -6,6 +6,10 @@
   "workers_dev": false,
   "routes": [
     {
+      "pattern": "game.chozo.net/megusuri",
+      "zone_name": "chozo.net"
+    },
+    {
       "pattern": "game.chozo.net/megusuri/*",
       "zone_name": "chozo.net"
     }
